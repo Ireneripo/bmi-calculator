@@ -15,7 +15,6 @@ function App() {
   }
 
   const bmi = React.useMemo(() => {
-    // Convert height from cm to m and calculate BMI
     const heightInMeters = height / 100;
     const newBMI = (weight / (heightInMeters * heightInMeters)).toFixed(1);
 
